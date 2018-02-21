@@ -28,4 +28,5 @@ Configure the root of your repository with the following files and directories. 
 Continue working on your vanilla REST API from yesterday. Today, you'll be refactoring several key sections of your application.  Follow the minimum requirements below *but* feel free to refactor any other areas that you deem necessary.
 * All routes should be removed from your `server.js` file and contained in a separate module (ex: `route/resource-route.js`)
 * All response (`res`) messages & status codes should be handled through a separate helper module (ex: `response.js`)
-* Refactor the `storage.js` module to use file system persistence. This should use the `fs` module to create and read data files. For easy access, the name of the file should contain the related resource id. (ex: `2f3c44d1b9ac2b.json`)
+* Refactor the `storage.js` module to use file system persistence. This should use the `fs` module to create and read data files. For easy access, the name of the file should contain the related resource id (ex: `2f3c44d1b9ac2b.json`).
+* Note - **don't forget** to use `bluebird` to "promisify" `fs`!
